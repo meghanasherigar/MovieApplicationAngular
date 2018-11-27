@@ -18,6 +18,9 @@ export class LatestMovieComponent implements OnInit {
   });
 
 }
+goBack(){
+  this.router.navigate(['home']);
+}
 showDetails(movie):void{
   console.log("hi");
   this.movieService.setData(movie);

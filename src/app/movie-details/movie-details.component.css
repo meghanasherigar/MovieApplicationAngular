@@ -46,16 +46,27 @@
 	color: #29abe2;
 	font-weight: bold;
     font-size: 28px;
-    margin-top: 0;
+    margin-top: 20px;
 }
 
-.movieTitle {
+.movieTitle  h1{
 	color: #29abe2;
 	font-size: 45px;
 	font-weight: bold;
 	margin: 0px 0 15px 0;
 }
-
+.movieTitle{
+	display: inline-block;
+	float:none;
+	vertical-align: middle;
+}
+.goBack{
+	color: #29abe2;
+	display: inline-block;
+	float:none;
+	vertical-align: middle;
+	
+}
 .profileDetails div {
 	margin: 5px 0;
 }
@@ -95,11 +106,14 @@
 	.showInfo {
 		padding: 0;
 	}
-	.castDetails {
+	.castDetails,.showInfo {
 		text-align: center;
 	}
-	.movieTitle {
+	.movieTitle h1 {
 		font-size: 22px;
+	}
+	.detailsHeading{
+		text-align: center;
 	}
 }
 

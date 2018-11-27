@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from '@angular/router';
 import {MovieServiceService} from '../movie-service.service';
 @Component({
   selector: 'app-movie-details',
@@ -12,7 +13,7 @@ export class MovieDetailsComponent implements OnInit {
   castDetails:any[];
   baseUrl="https:///image.tmdb.org/t/p/original/";
    
-  constructor(private movieService:MovieServiceService) { }
+  constructor(private movieService:MovieServiceService,private router:Router) { }
 
   ngOnInit() {
    this.movieObjet= this.movieService.getData();
@@ -24,7 +25,9 @@ export class MovieDetailsComponent implements OnInit {
     this.castDetails=movieCast.cast;
     });
   }
-
+  goBack(){
+    this.router.navigate(['home']);
+  }
     private player;
     private ytEvent;
     

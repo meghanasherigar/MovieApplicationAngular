@@ -1,4 +1,8 @@
 <div class="appWrapper col-lg-12">
+    <div class="col-lg-12 goBack">
+        <p (click)="goBack();">Back</p>
+     
+     </div>
   <div *ngFor="let latest of  latestPlayingMovie " class="filmBlock col-lg-4 col-sm-12 col-xs-12 " (click)="showDetails(latest);" >
     <div class="posterImg">
           <img [src]='baseUrl+latest.poster_path' onError="this.src='../assets/posterImage.png'">

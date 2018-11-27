@@ -25,5 +25,8 @@ export class TopRatedMovieComponent implements OnInit {
     this.movieService.setData(movie);
     this.router.navigate(['movieDetails']);
   }
+  goBack(){
+    this.router.navigate(['home']);
+  }
 
 }

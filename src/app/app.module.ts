@@ -15,6 +15,7 @@ import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { SearchMovieComponent } from './search-movie/search-movie.component';
 const routes: Routes = [
        { path: '', component: HomePageComponent },
+       { path: 'home', component: HomePageComponent },
        {path :'movieDetails',component:MovieDetailsComponent},
        {path :'topRated' ,component:TopRatedMovieComponent},
        {path:'latestMovie', component:LatestMovieComponent}

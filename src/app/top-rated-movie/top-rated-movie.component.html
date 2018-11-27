@@ -1,4 +1,8 @@
 <div class="appWrapper col-lg-12">
+    <div class="col-lg-12  col-sm-12 col-xs-12 goBack">
+        <p (click)="goBack();">Back</p>
+     
+     </div>
   <div *ngFor="let topRated of  topRatedMovie" class="filmBlock col-lg-4 col-sm-12 col-xs-12" (click)="showDetails(topRated);" >
     <div class="posterImg">
           <img [src]='baseUrl+topRated.poster_path' onError="this.src='../assets/posterImage.png'">
