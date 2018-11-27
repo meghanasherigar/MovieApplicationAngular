@@ -1,0 +1,144 @@
+.appWrapper {
+	margin: 40px 0;
+	display: inline-block;
+	width: 100%;
+}
+
+.padding0 {
+	padding: 0;
+}
+
+.posterImg {
+	height: 245px;
+	display: inline-block;
+}
+
+h3 {
+	color: #29abe2;
+	margin-left: 20px;
+}
+
+.posterImg img {
+	max-width: 100%;
+	max-height: 100%;
+	width: 100%;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+
+.filmBlock {
+	height: 300px;
+	vertical-align: middle;
+}
+
+.latestMovie {
+	line-height: 300px;
+	border: none;
+	color: white;
+	font-size: 25px;
+	text-align: center;
+}
+
+.topRatedMovie {
+	line-height: 300px;
+	border: none;
+	font-size: 25px;
+	color: white;
+	text-align: center;
+}
+
+.filmTitle {
+	padding: 20px 0;
+	margin: 0;
+	text-align: center;
+	font-weight: bold;
+  border: 1px solid;
+  border-top: none;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+
+.searchButton {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.searchButton img {
+	height: 80px;
+}
+
+.searchBox {
+	display: inline-block;
+	padding: 16px;
+	border-radius: 34px;
+	width: 460px;
+	border: 1px solid;
+	border-color: #29abe2;
+	box-shadow: none;
+	font-size: 24px;
+	vertical-align: middle;
+}
+
+.searchBox:focus {
+	outline: none;
+}
+
+.searcMovie {
+	text-align: center;
+	padding: 25px 0 10px 0;
+}
+
+.topRatedMovie p {
+	border-radius: 4px;
+	background: linear-gradient(to bottom left, #99ccff 0%, #ff99ff 100%);
+}
+
+.latestMovie p {
+	border-radius: 4px;
+	background: linear-gradient(to top left, #99ccff 0%, #ff9966 100%);
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-height: 1024px) {
+	.filmBlock {
+		margin: 15px 0;
+	}
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 768px) {
+	.filmBlock {
+		margin: 15px 0;
+	}
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) {
+	.searchBox {
+		padding: 5px 10px;
+		width: 210px;
+	}
+	.searchButton img {
+		height: 35px;
+		width: 48px;
+	}
+}
+
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) {
+	.searchBox {
+		padding: 5px 10px;
+		width: 263px;
+	}
+	.searchButton img {
+		height: 40px;
+		width: 58px;
+	}
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-height: 736px) {
+	.searchBox {
+		padding: 5px 10px;
+		width: 263px;
+	}
+	.searchButton img {
+		height: 40px;
+		width: 58px;
+	}
+}

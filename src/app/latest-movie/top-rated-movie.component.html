@@ -1,0 +1,12 @@
+<div class="appWrapper">
+  <div *ngFor="let topRated of  topRatedMovie" class="filmBlock" (click)="showDetails(topRated);" >
+    <div class="posterImg">
+          <img [src]='baseUrl+topRated.poster_path' onError="this.src='../assets/posterImage.png'">
+      </div>
+      
+      <h5 class="filmTitle">{{topRated.title}}
+        </h5>
+
+  </div>
+</div>
+

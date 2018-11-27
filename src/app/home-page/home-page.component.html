@@ -1,0 +1,23 @@
+<div class="appWrapper">
+    <div class="searcMovie">
+       <input type="text"  #movieName class="searchBox">
+       <div (click)="getMovieContents(movieName.value)" class="searchButton"><img src="../assets/searchIcon.png"></div>
+    </div>
+    <h3> {{themessage}}</h3>
+    <div class="movieContent col-lg-12 col-sm-12 col-xs-12">
+    <div *ngFor="let film of filmyData" class="filmBlock col-lg-4 col-sm-12 col-xs-12" (click)="showDetails(film);">
+    <!-- {{ film.popularity }} -->
+    <div class="posterImg">
+       <img [src]='baseUrl+film.poster_path' onError="this.src='../assets/posterImage.png'">
+    </div>
+    <h5 class="filmTitle">{{film.title}}
+    </h5>
+ </div>
+ <div class="topRatedMovie filmBlock col-lg-4 col-sm-12 col-xs-12" (click)="showTopRatedMovies()">
+    <p>Top rated movies</p>
+ </div>
+ <div class="latestMovie filmBlock col-lg-4 col-sm-12 col-xs-12" (click)="showLatestMovies()"> 
+   <p> Latest movies</p>
+ </div>
+</div>
+ </div>

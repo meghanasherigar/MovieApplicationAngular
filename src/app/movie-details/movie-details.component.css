@@ -1,0 +1,113 @@
+.appWrapper {
+	margin: 55px 0;
+	display: inline-block;
+}
+
+.movieImg {
+	height: 415px;
+}
+
+.movieImg img {
+	max-width: 100%;
+	max-height: 100%;
+	width: 100%;
+	height: 100%;
+}
+
+.profileImg Img {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+}
+
+.castDetails {
+	margin: 15px 0;
+	font-size: 16px;
+}
+
+.profileImg {
+	display: inline-block;
+	vertical-align: middle;
+	float: none;
+}
+
+.profileDetails {
+	display: inline-block;
+	vertical-align: middle;
+	float: none;
+}
+
+.showInfo div {
+	font-size: 20px;
+	padding: 10px 0;
+}
+
+.detailsHeading {
+	color: #29abe2;
+	font-weight: bold;
+    font-size: 28px;
+    margin-top: 0;
+}
+
+.movieTitle {
+	color: #29abe2;
+	font-size: 45px;
+	font-weight: bold;
+	margin: 0px 0 15px 0;
+}
+
+.profileDetails div {
+	margin: 5px 0;
+}
+
+.loader {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+}
+
+.castContents {
+	display: inline-block;
+}
+
+@media only screen and (max-device-width: 768px) {
+	.castDetails {
+		text-align: center;
+	}
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 731px) {
+	.movieImg {
+		height: 310px;
+	}
+	.movieDetails {
+		padding: 0;
+	}
+	.movieImg {
+		padding: 0;
+	}
+	.movieStory {
+		padding: 0;
+	}
+	.profileDetails {
+		padding: 0;
+	}
+	.showInfo {
+		padding: 0;
+	}
+	.castDetails {
+		text-align: center;
+	}
+	.movieTitle {
+		font-size: 22px;
+	}
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-height: 823px) {
+	.movieDetails {
+		padding: 0;
+	}
+	.movieImg {
+		padding: 0;
+	}
+}
